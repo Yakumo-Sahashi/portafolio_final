@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./public/img/code_blue.webp">
+    <link rel="stylesheet" href="./public/css/b5/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/font_awesome/all.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/aos/aos.css">
+    <script src="./public/js/font_awesome/all.js"></script>
+    <script src="./public/js/swal/swal.js"></script>
+    <script src="./public/js/jquery/jquery.js"></script>
+    <script src="./public/js/poper/popper.js"></script>
+    <script src="./public/js/b5/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="./controller/code_blue.bundle.js"></script>
+    <title>Portafolio | Code Seiryu By Diego Bollas</title>
+</head>
+<body>
+    <div class="contenedor" id="main_loader">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <div class="loader2"></div>
+            <img loading="lazy" class="img-load" src="./public/img/code_blue.webp" alt="">
+        </div>
+    </div>
+    <div class="min-vh-100 d-flex flex-column justify-content-between">
+        <main class="main" id="main">
+            <section class="section my-0 py-0">
+                <div class="header text-white">
+                    <div class="side-nav">
+                        <div onclick="dirigir('#inicio')" class="user">
+                            <img class="user-img" src="./public/img/code_blue.webp">
+                            <div>
+                                <h2>Code Seiryu</h2>
+                                <p>codeseiryu.com.mx</p>
+                            </div>
+                            <span class="start-img"><i class="fa-solid fa-laptop-code"></i></span>
+                        </div>
+                        <ul class="cont">
+                            <li onclick="dirigir('#sobre_mi')">
+                                <i class="fa-solid fa-user-astronaut me-2"></i><span>Sobre mi</span>
+                            </li>
+                            <li onclick="dirigir('#lenguajes')">
+                                <i class="fa-solid fa-code me-2"></i><span>Lenguajes</span>
+                            </li>
+                            <li onclick="dirigir('#frameworks')">
+                                <i class="fa-solid fa-laptop-code me-2"></i><span>Framework</span>
+                            </li>
+                            <li onclick="dirigir('#tecnologias')">
+                                <i class="fa-solid fa-microchip me-2"></i><span>Tecnologías</span>
+                            </li>
+                            <li onclick="dirigir('#db')">
+                                <i class="fa-solid fa-database me-2"></i><span> BD</span>
+                            </li>
+                            <li onclick="dirigir('#so')">
+                                <i class="fa-brands fa-ubuntu me-2"></i><span>SO</span>
+                            </li>
+                            <li onclick="dirigir('#proyectos')">
+                                <i class="fa-solid fa-diagram-project me-2"></i><span>Proyectos</span>
+                            </li>
+                        </ul>
+                        <ul class="cont">
+                            <li onclick="dirigir('#contacto')">
+                                <i class="fa-regular fa-address-book me-2"></i><span>Contacto</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="boton-ft">
+                    <button id="menu_sm" class="btn-boton-ft"><i class="fa-solid fa-bars"></i></button>
+                </div>
+                <div class="fondo">
+                    <div class="container-fluid fon py-0 mb-0" id="inicio">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 align-self-center inicio">
+                                    <div data-aos="fade-up" data-aos-duration="3000">
+                                        <p class="display-1"><b> PORTAFOLIO </b></p>
+                                        <p class="display-6">Conoce mis proyectos como desarrollador web.</p> 
+                                        <span class="btn btn-link btn-lg text-white" onclick="dirigir('#sobre_mi')"><i class="fa-solid fa-angles-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fondo2">
+                    <div class="container-fluid fon py-0 mb-0" id="sobre_mi">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 align-self-center inicio">
+                                    <div data-aos="zoom-in" data-aos-duration="3000">
+                                        <p class="display-3"><b> ¿Quien soy? </b></p>
+                                        <p class="display-6">Diego Alberto Bollas Paredes</p> 
+                                        <p class="lead">Ing. En Sistemas Computacionales</p> 
+                                    </div>
+                                    <div data-aos="fade-up" data-aos-duration="3000">
+                                        <a target="_blank" class="btn btn-blue" download="CV_Diego_Alberto_Bollas_Paredes.pdf" href="./public/files/doc/CV-Bollas_Paredes_Diego_Alberto.pdf"><i class="fa-regular fa-circle-down me-2"></i>Descargar CV</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fondo3">
+                    <div class="container-fluid fon py-0 mb-0" id="lenguajes">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 align-self-center mb-5" data-aos="zoom-in" data-aos-duration="3000">
+                                    <p class="display-1"><b><i class="fa-solid fa-code me-2"></i> Lenguajes </b></p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row justify-content-around">
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/html.webp" alt="HTML5">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>HTML</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-right" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/css.webp" alt="CSS3">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>CSS</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/php.webp" alt="PHP">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>PHP</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-right" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/python.webp" alt="PYTHON">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Python</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/js.webp" alt="JAVASCRIPT">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Javascript</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-right" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/java.webp" alt="JAVA">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Java</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fondo4">
+                    <div class="container-fluid fon py-0 mb-0" id="frameworks">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 align-self-center mb-5" data-aos="zoom-in" data-aos-duration="3000">
+                                    <p class="display-1"><b><i class="fa-solid fa-laptop-code me-2"></i> Frameworks y Librerías </b></p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row justify-content-around">
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/bootstrap.webp" alt="Bootstrap">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Bootstrap</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-right" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/laravel.webp" alt="Laravel">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Laravel</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/react.webp" alt="React">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>React</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--  <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/code_blue.webp" alt="Code Blue">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Code Blue</b></p>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fondo5">
+                    <div class="container-fluid fon py-0 mb-0" id="tecnologias">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 align-self-center mb-5" data-aos="zoom-in" data-aos-duration="3000">
+                                    <p class="display-1"><b><i class="fa-solid fa-microchip me-2"></i> Tecnologías y Herramientas </b></p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row justify-content-around">
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/git.webp" alt="Git">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Git</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-right" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/github.webp" alt="GitHub">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>GitHub</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/composer.webp" alt="Composer">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Composer</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/npm.webp" alt="npm">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>npm</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fondo7">
+                    <div class="container-fluid fon py-0 mb-0" id="db">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 align-self-center mb-5" data-aos="zoom-in" data-aos-duration="3000">
+                                    <p class="display-1"><b><i class="fa-solid fa-database"></i> Base de Datos </b></p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row justify-content-around">
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/mysql.webp" alt="MySQL">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>MySQL</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fondo8">
+                    <div class="container-fluid fon py-0 mb-0" id="so">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center">
+                                <div class="col-md-12 align-self-center mb-5" data-aos="zoom-in" data-aos-duration="3000">
+                                    <p class="display-1"><b> <i class="fa-brands fa-ubuntu me-2"></i> Sistemas Operativos </b></p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row justify-content-center">
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-left" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/windows.webp" alt="Windows">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Windows</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-2 mb-3" data-aos="flip-right" data-aos-duration="3000">
+                                            <div class="card bg-blackk rounded">
+                                                <div class="card-body mx-2">
+                                                    <img class="img-fluid mx-auto d-block" src="./public/img/linux.webp" alt="Linux">
+                                                </div>
+                                                <div class="card-foooter">
+                                                    <p class="lead"><b>Linux</b></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-blackk borde-t borde-b">
+                    <div class="container d-flex flex-column justify-content-center h-100 text-white" id="proyectos">
+                        <div class="row justify-content-around mt-5 mb-5">
+                            <div class="col-md-12 align-self-center mb-5 text-center mt-5" data-aos="zoom-in" data-aos-duration="3000">
+                                <p class="display-1"><b><i class="fa-solid fa-diagram-project me-2"></i> Mis Proyectos </b></p>
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-7 order-2 order-md-1 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/1/proyecto1_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/1/proyecto1_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/1/proyecto1_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/1/proyecto1_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 order-1 order-md-2 mb-3 text-end align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página Oficial</b></h1>
+                                        <h2 class="text-center"><b>Instituto Tecnológico de Milpa Alta II</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Página realizada para promoción de la institución y mostrar la oferta educativa, aplicando las normas y lineamientos de TECNM.</p>
+                                        <br>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <hr class="bg-blue">
+                                        <a class="btn btn-azul" href="https://milpaalta2.tecnm.mx/" target="_blank"><i class="fa-solid fa-up-right-from-square me-2"></i>Visitar</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-5 mb-3 text-start align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Sistema de Preinscripción</b></h1>
+                                        <h2 class="text-center"><b>TecNM Campus Milpa Alta II</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Se realizo un sistema para llevar acabo un pre registro de posibles alumnos al plantel, además de permitir la cargar de archivos y realizar el examen de ingreso desde la misma plataforma.</p>
+                                        <br>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-solid fa-database me-1"></i>MySQL</span>
+                                        <hr class="bg-blue">
+                                        <a class="btn btn-azul" href="https://milpaalta2.tecnm.mx/preregistro/" target="_blank"><i class="fa-solid fa-up-right-from-square me-2"></i>Visitar</a>
+                                    </div>
+                                    <div class="col-md-7 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/2/proyecto2_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/2/proyecto2_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/2/proyecto2_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/2/proyecto2_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-7 order-2 order-md-1 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/3/proyecto3_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/3/proyecto3_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/3/proyecto3_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/3/proyecto3_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 order-1 order-md-2 mb-3 text-end align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Sistema Web</b></h1>
+                                        <h2 class="text-center"><b>Sistema de Encuestas para Docentes del CENAT </b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">El sistema de encuestas se realizo para llevar un seguimiento del desempeño de los docentes, alumnos y padres de familia. Se permite el acceso al sistema mediante un login en caso del administrador, para encuestados se implemento un PIN. Después realizar las encuestas en administrador puede consultar los datos.</p>
+                                        <br>
+                                        <span class="btn btn-red mb-3"><i class="fa-brands fa-java me-1"></i>JSP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-solid fa-database me-1"></i>MySQL</span>
+                                        <hr class="bg-blue">
+                                        <button class="btn btn-azul" onclick="precargar_galeria(3,9)"><i class="fa-solid fa-up-right-from-square me-2"></i>Ver más</button>
+                                    </div>
+                                </div>
+                            </div>            
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-5 mb-3 text-start align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página web</b></h1>
+                                        <h2 class="text-center"><b> PINEDA TEPALCAPA & ASOCIADOS</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Pagina web para la promoción de los servicios que ofrece el despacho de abogados, se busco facilitar el acceso a la información y permitir el contacto desde la misma mediante el envío de correos electrónicos automáticos.</p>
+                                        <br>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <hr class="bg-blue">
+                                        <a class="btn btn-azul" href="https://www.piteyasoc.com.mx/" target="_blank"><i class="fa-solid fa-up-right-from-square me-2"></i>Visitar</a>
+                                    </div>
+                                    <div class="col-md-7 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/4/proyecto4_2.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/4/proyecto4_4.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/4/proyecto4_5.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/4/proyecto4_6.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-7 order-2 order-md-1 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/5/proyecto5_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/5/proyecto5_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/5/proyecto5_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/5/proyecto5_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 order-1 order-md-2 mb-3 text-end align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página oficial</b></h1>
+                                        <h2 class="text-center"><b>Error de Capa 8</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Pagina para difusión del canal de Youtube “Error de Capa 8” enfocado a la programación. También permite la visualización de demos de paginas web, para futuros clientes.</p>
+                                        <br>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <hr class="bg-blue">
+                                        <button class="btn btn-azul" onclick="precargar_galeria(5,6)"><i class="fa-solid fa-up-right-from-square me-2"></i>Ver más</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-5 mb-3 text-start align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página web</b></h1>
+                                        <h2 class="text-center"><b> ANIME HIKARI</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Proyecto personal que emula una plataforma de streaming enfocado al anime (animación japonesa).  Este sistema permite el registro de usuarios, visualización de capítulos, listas de favoritos, carga de imágenes y registro de información (capitulos, animes, usuarios,etc). Realizada con Laravel 8</p>
+                                        <br>
+                                        <span class="btn btn-red mb-3"><i class="fa-brands fa-laravel me-1"></i>Laravel</span>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-solid fa-database me-1"></i>MySQL</span>
+                                        <hr class="bg-blue">
+                                        <button type="button" class="btn btn-azul" onclick="precargar_galeria(6,17)"><i class="fa-solid fa-up-right-from-square me-2"></i>Ver más</button>
+                                        <a class="btn btn-blue" href="https://github.com/Yakumo-Sahashi/anime_pro" target="_blank"><i class="fa-brands fa-github me-2"></i>Repositorio</a>
+                                    </div>
+                                    <div class="col-md-7 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/6/proyecto6_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/6/proyecto6_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/6/proyecto6_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/6/proyecto6_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-7 order-2 order-md-1 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/7/proyecto7_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/7/proyecto7_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/7/proyecto7_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/7/proyecto7_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 order-1 order-md-2 mb-3 text-end align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página web</b></h1>
+                                        <h2 class="text-center"><b>KIRISUKE DS</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Pagina para la promoción del contenido del canal de Youtube “KIRISUKE DS” enfocado a la música. Permite el registro usuarios, visualización de videos, letras en español, fondos de pantalla, información de artistas y apartado de comentarios en los videos.</p>
+                                        <br>
+                                        <span class="btn btn-azul mb-3"><img src="./public/img/code_blue.webp" width="20px" class="me-1">Code Blue</span>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-solid fa-database me-1"></i>MySQL</span>
+                                        <hr class="bg-blue">
+                                        <button type="button" onclick="precargar_galeria(7,25)" class="btn btn-blue"><i class="fa-solid fa-up-right-from-square me-2"></i>Ver más</button>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-5 mb-3 text-start align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página web</b></h1>
+                                        <h2 class="text-center"><b> Hunter x Hunter 2011</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Proyecto personal realizado con el fin de mostrar toda información posible sobre el anime llamado “Hunter x Hunter 2011”. Es una pagina de solo consulta realizada con Laravel 8.</p>
+                                        <br>
+                                        <span class="btn btn-red mb-3"><i class="fa-brands fa-laravel me-1"></i>Laravel</span>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <hr class="bg-blue">
+                                        <button type="button" onclick="precargar_galeria(8,9)" class="btn btn-azul"><i class="fa-solid fa-up-right-from-square me-2"></i>Ver más</button>
+                                        <a class="btn btn-blue" href="https://github.com/Yakumo-Sahashi/hunterxhunter" target="_blank"><i class="fa-brands fa-github me-2"></i>Repositorio</a>
+                                    </div>
+                                    <div class="col-md-7 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/8/proyecto8_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/8/proyecto8_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/8/proyecto8_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/8/proyecto8_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-7 order-2 order-md-1 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/9/proyecto9_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/9/proyecto9_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/9/proyecto9_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/9/proyecto9_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 order-1 order-md-2 mb-3 text-end align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página web</b></h1>
+                                        <h2 class="text-center"><b>Lucoa - Viajes turisticos</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Pagina interactiva para la promoción de sitios turísticos en el mundo. Permite el registro de usuarios, comentarios edición de perfil, carga de fotografías, actualización y adición de nuevas publicaciones en panel de administrador.</p>
+                                        <br>
+                                        <span class="btn btn-blue2 mb-3"><i class="fa-brands fa-php me-1"></i>PHP</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-solid fa-database me-1"></i>MySQL</span>
+                                        <hr class="bg-blue">
+                                        <button type="button" class="btn btn-azul" onclick="precargar_galeria(9,13)"><i class="fa-solid fa-up-right-from-square me-2"></i>Ver más</button>
+                                        <a class="btn btn-blue" href="https://github.com/Yakumo-Sahashi/lucoa" target="_blank"><i class="fa-brands fa-github me-2"></i>Repositorio</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-12 mb-5 mt-3">
+                                <hr class="bg-blue">
+                            </div>
+                            <div class="col-12 mb-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-5 mb-3 text-start align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                        <h1 class="text-center lead"><b>Página web</b></h1>
+                                        <h2 class="text-center"><b> Math Code</b></h2>
+                                        <hr class="bg-blue">
+                                        <p class="lead text-justify">Aplicación web para calcular datos matemáticos; moda, media, mediana, etc. Genera una tabla de información y representa los resultados en una grafica.</p>
+                                        <br>
+                                        <span class="btn btn-orange mb-3"><i class="fa-brands fa-html5 me-1"></i>HTML</span>
+                                        <span class="btn btn-yellow mb-3"><i class="fa-brands fa-js me-1"></i>Javascript</span>
+                                        <span class="btn btn-azul mb-3"><i class="fa-brands fa-css3-alt me-1"></i>CSS</span>
+                                        <span class="btn btn-purple mb-3"><i class="fa-brands fa-bootstrap me-1"></i>Bootstrap</span>
+                                        <hr class="bg-blue">
+                                        <a class="btn btn-azul" href="https://yakumo-sahashi.github.io/estadistica/" target="_blank"><i class="fa-solid fa-up-right-from-square me-2"></i>Visitar</a>
+                                        <a class="btn btn-blue" href="https://github.com/Yakumo-Sahashi/estadistica" target="_blank"><i class="fa-brands fa-github me-2"></i>Repositorio</a>
+                                    </div>
+                                    <div class="col-md-7 mb-3 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/10/proyecto10_1.webp">                                    
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/10/proyecto10_2.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/10/proyecto10_3.webp"> 
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="img-fluid borde-d" src="./public/img/proyectos/10/proyecto10_4.webp"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fondo6">
+                    <div class="container-fluid fon py-0 mb-0" id="contacto">
+                        <div class="container d-flex flex-column justify-content-center h-100 text-white text-center">
+                            <div class="row justify-content-center bg-blackk borde-d">
+                                <div class="col-md-12 align-self-center mb-5 mt-4" data-aos="zoom-in" data-aos-duration="3000">
+                                    <p class="display-3"><b><i class="fa-regular fa-address-book me-2"></i> Contacto</b></p>
+                                </div>
+                                <div class="col-12 mb-2">
+                                    <div class="row justify-content-around">
+                                        <div class="col-md-4 align-self-center" data-aos="fade-down" data-aos-duration="3000">
+                                            <input type="text" name="mi_email" id="mi_email" value="ing.bollas@codeseiryu.com.mx" hidden>
+                                            <a class="btn btn-verde mb-3 w-100" href="https://api.whatsapp.com?send?phone=5615120637" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a>                    
+                                            <a class="btn btn-azul w-100 mb-3" href="https://www.linkedin.com/in/diego-alberto-bollas-paredes-7b1123275/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</a>
+                                            <button class="btn btn-rojo w-100 mb-3" id="btn_correo" type="button" title="Click para copiar"><i class="fa-solid fa-envelope me-2"></i>ing.bollas@codeseiryu.com.mx</button>
+                                        </div>
+                                        <div class="col-md-7 align-self-center" data-aos="fade-up" data-aos-duration="3000">
+                                            <form id="frm_contacto" class="row mt-4 mb-4">
+                                                <div class="col-md-12 mb-2">
+                                                    <h4>Enviame un email</h4>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3 ">
+                                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                                                        <label for="nombre" class="form-label text-white"><i class="fa-solid fa-signature me-2"></i>Nombre</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="correo_electronico" name="correo_electronico" placeholder="Correo institucional">
+                                                        <label for="correo_electronico" class="form-label text-white"><i class="fa-solid fa-at me-2"></i>Correo electronico</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 text-end">
+                                                    <div class="form-floating mb-3">
+                                                        <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Asunto">
+                                                        <label for="asunto" class="form-label text-white"><i class="fa-solid fa-envelope-open-text me-2"></i>Asunto</label>
+                                                    </div>
+                                                    <div class="form-floating mb-3">
+                                                        <textarea class="form-control" name="mensaje" id="mensaje"></textarea>
+                                                        <label for="mensaje" class="form-label text-white"><i class="fa-regular fa-message me-2"></i>Mensaje</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-azul"><i class="fa-regular fa-paper-plane me-2"></i>Enviar</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="galeria_img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="staticBackdropLabel">Galeria de imagenes</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row justify-content-around">
+                                <div class="col-md-12 mb-4">
+                                    <div class="contenedor-prev">
+                                        <div class="content-pre" id="prev_galeria">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-center align-self-center">
+                                    <img id="img_view" width="100%" class="mx-auto d-block borde-d" src="./public/img/proyectos/9/proyecto9_3.webp" alt="Cargarndo...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-blue" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark me-2"></i>Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+        </main>
+        <div class="go-top-container">
+            <span type="button" class="go-top-button">
+                <i id="subir" class="icono fas fa-chevron-up d-none"></i>
+            </span>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid text-white">
+            <div class="row py-3 justify-content-center">
+                <div class="col-lg-6 col-sm-12 text-center align-self-center">
+                    <h5><img class="me-2" src="./public/img/code_blue.webp" width="35px">Code Seiryu</h5>
+                    <h6 class="pt-0"><i class="far fa-copyright me-2"></i>Copyright 2023 | Diego Bollas</h6>
+                </div>
+                <div class="col-lg-6 col-sm-12 text-center align-self-center">
+                    <h5>Contacto</h5>
+                    <p><i class="fa-solid fa-envelope me-2"></i>ing.bollas@codeseiryu.com.mx</p>
+                    <input type="text" name="mi_email" id="mi_email" value="ing.bollas@codeseiryu.com.mx" hidden>
+                    <a class="btn btn-verde rounded-circle" href="https://api.whatsapp.com?send?phone=5615120637" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>                    
+                    <a class="btn btn-azul rounded-circle" href="https://www.linkedin.com/in/diego-alberto-bollas-paredes-7b1123275/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./controller/contacto.controller.js"></script>
+    <script src="./controller/galeria.controller.js"></script>
+    <script src="./controller/frontend.controller.js"></script>
+</body>
+</html>
